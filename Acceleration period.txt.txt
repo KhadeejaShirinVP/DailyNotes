@@ -1,0 +1,163 @@
+ 1.. VISUAL STUDIO BASICS
+*IT IS POWERFULL IDE( INTEGRATED DEVELOPMENT ENTERPRISE.
+*USED TO DEVELOPMENT
+  - COMPUTER PROGRAMMING
+  - WEDSITES
+  - MOBILE APPLICATION
+  - GAMES etc
+  
+* F10 -- USED FOR DEBUGGING LINE TO NEXT LINE
+* F11 -- USED FOR DEBUGGING TO IN LINE
+  
+*4 PARTS-
+-1.CODE EDITOR- FOR CODE WRITE AND DESIGNING
+-2.SOLUTION EXLPORER- PROJECT/FILE NAME DETAILS
+-3.PROPERTIES- ADDITIONAL PROPERTIES AND CONTEXT ABOUT SELECTED PARTS OF OUR PROJECT.
+             - MAINLY USED FOR DESIGNING
+			 - OUR PROJECT WILL GET BETTER
+-4.OUTPUT WINDOW- IT DISPLAY DEBUGGING AND ERROR MESSAGE, COMPILER WARNING,STATUS MESSAGES AND OTHER OUTPUT.
+
+* FEATURES OF VISUAL STUDIO
+-1.CODE EDITOR
+-2.DEBUGGER - work both as a Machine Level Debugger as well as a Source Level Debugger.
+-3.DESIGNER- WPF DESIGNER(WINDOWS PRESENTATION FOUNDATION)
+           - WINDOWS FORMS DESIGNER- CREATE GUI APPLICATION(GRAPHICAL USER INTERFACE)
+		   - CLASS DESIGNER-AUTHORISE AND EDIT THE CLASSES,USING UML MODELLING(UNIFIED MODELLING LANGUAGE).
+		   - WEB DESIGNER
+		   - MAPPING DESIGNER
+		   - DATA DESIGNER
+		   
+-4.OTHER TOOLS - OPEN TABS BROWSER
+               - PROPERTIES EDITOR
+			   - SERVER EXLPORER
+			   - OBJECT BROWSER
+			   - TEAM BROWSER
+			   - DATA BROWSER
+			   - SOLUTION EXLPORER-Solution Explorer manages and browses the files in a solution.
+			   
+-5.EXTENSIBILITY- VS PERMITS DEVELOPER TO WRITE DOWN EXTENSIONS FOR VS TO EXTEND ITS CAPABILITIES.
+
+*WHY SHOULD YOU CHOOSE VISUAL STUDIO
+-LIGHTWEIGHT
+-FAST
+-OPEN SOURCE
+-CROSS PLATFORM NATURE.
+
+
+ 2...NET CORE
+ -1. CROSS PLATFORM
+ -2. HIGH PERFORMANCE
+ -3. OPEN SOURCEFRAMEWORK- FREELY AVAILABLE FOR DOWNLOAD AND INSTAL
+ -4. CLOUD- ENBLED.
+ -5. INTERNET CONNECTED APPLICATION.
+ -6. FLEXIBLE - MULTIPLE DATA TYPES.
+ 
+ * WE CAN BUILD 
+ - WEB APPS AND SERVICES.
+ - INERNET OF THINGS(IoT)
+ - MOBILE APPLICATION BACKENDS
+ * DIPLOY TO THE CLOUD OR ON-PROMISES.
+ * SMALL IN SIZE COMPARED TO .NET. BUT NEW FEATURESCAN BE ADDED VIA NuGet PACKAGES AS PER APPLICATION REQUIREMENT.
+ * DUE TO NuGet PACKAGE ADDITION 
+ - HIGH PERFORMANCE
+ - REQUIRE LESS MONEY
+ - LESS DEPLOYMENT SIZE
+ - EASY TO MAINTAIN.
+ 
+ 3..ASP.NET CORE(ACTIVE SERVER PAGE)
+ 
+ -*OPEN SOURCE
+ -*CROSS PLATFORM- DEPLOY AND RUN IN ANY PLATFORM
+ -*CLI SUPPORT-(COMMAND-LINE INTERFACE)- IT IS A COMMAND LINE TOOL
+ -*NUGET PACKAGE- ITS IS PACKAGE MANAGEMENT SYSTEM FOR .NET CORE APPLICATION.
+                - ASP.NET CORE IS SMALL IN SIZE.
+				- BENEFIT- INITIALLY BIG SIZE IS COMING AT THE TIME OF INSTAL.
+				- WE CAN USE THE APPLICATION WITH CURRECT OPTIMISED SIZE.
+ -*ENTITY FRAMEWORK CORE - IT IS ORM(OBJECT RELATIONAL MAPPING)
+                         - ADVANTAGE- IT SUPPORT IN MULTIPLE DATA BASE.
+						 - SCHEMAS MIGRATIONS.
+						 - ENTITY FW CAN BE ADDED AS A NuGet PACKAGE.
+-* SMALLER DEPLOYMENT FOOTPRINT 
+
+-* SUPPORT LANGUAGE - C# (COMMONLY USED)
+                    - F#
+					- VISUAL BASIC(VB)
+
+ 
+4.. INSTALLATION OF .NET CORE
+-* DOWNLOAD  - Download .NET SDKs    OR   VISUAL STUDIO
+
+
+
+
+26-09-2022
+
+**Types of Operators in C#:
+Arithmetic Operators
+Relational Operators
+Logical Operators
+Bitwise Operators
+Assignment Operators
+Unary Operators or
+Ternary Operator or Conditional Operator
+
+* Unary Operator: The Operator that requires one operand (variable or value) to perform the operation is called Unary Operator.
+* Binary Operator: Then Operator that requires two operands (variables or values) to perform the operation is called Binary Operator.
+* Ternary Operator: The Operator that requires three operands (variables or values) to perform the operation is called Ternary Operator. 
+  Ternary Operator is also called Conditional Operator.
+
+**nested if block
+1. Condition1: First, it will check the first if condition i.e. the outer if condition and if it is true, then the outer else block will be terminated. So, the control moves inside the first or the outer if block. Then again it checks the inner if condition and if the inner if condition is true, then the inner else block gets terminated. 
+   So, in this case, the outer if and inner if block statements get executed.
+2. Condition2: Now, if the outer if condition is true, but the inner if condition is false, then the inner if block gets terminated. So, in this case, the outer if and inner else block statements get executed.
+3. Condition3: Now, if the outer if condition is false, then the outer if block gets terminated and control moves to the outer else block. And inside the outer else block, again it checks the inner if condition, and if the inner if condition is true, then the inner else block gets terminated. So, in this case, the outer else and inner if block statements get executed.
+4. Condition4: Now, if the outer if condition is false as well as the if condition inside the outer else blocks also failed, then the if block gets terminated. And in this case, the outer else and inner else block statements get executed. This is how statements get executed in Nested if. Now we will see the flow chart of nested if blocks.
+
+
+**switch
+Although the switch statement makes the code look cleaner than the if…else if statement, the switch is restricted to work with limited data types. 
+The switch statement in C# only works with:
+Primitive data types: bool, char, and integral type
+Enumerated Types (Enum)
+String Class
+Nullable types of the above data types
+
+
+**Loops in C#:
+-Loops are also called repeating statements or iterative statements.
+-The Looping Statements are also called Iteration Statements.
+-Looping in programming languages is a feature that facilitates the execution of a set of instructions repeatedly while some condition evaluates to true.
+-The process of repeatedly executing a statement or group of statements until the condition is satisfied is called looping. In this case, when the condition becomes false the execution of the loops terminates. 
+-The way it repeats the execution of the statements or instructions will form a circle that’s why iteration statements are called loops.
+1.Counter Loops
+2.Conditional Loops
+
+
+*types of loop
+1.For loop
+2.For Each Loop
+3.While loop--executes a block of instructions or statements repeatedly as long as the loop condition is true. How many times it will repeat means as long as the given condition is true. When the condition fails, it will terminate the loop execution.
+4.Do while loop
+
+*Entry Controlled Loops: The loops in which the condition to be tested is present at beginning of the loop body are known as Entry Controlled Loops. 
+Examples of Entry Controlled Loops are while loop and for loop.
+
+*Exit Controlled Loops: The loops in which the testing condition is present at the end of the loop body are termed Exit Controlled Loops. 
+An example of Exit Controlled Loop is the do-while loop. 
+In Exit Controlled Loops, the loop body will be evaluated at least one time as the testing condition is present at the end of the loop body.
+
+. For Loop 
+Loop initialization
+Condition evaluation
+Execution of instruction
+Increment/Decrement
+
+**Functions of C# Language
+A function is a group of related instructions that performs a specific task.
+functions allow us to reuse the code without retyping the code.
+
+**Types of Functions in C#:
+Built-in Functions
+User-Defined Functions
+
+
