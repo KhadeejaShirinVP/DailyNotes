@@ -29,3 +29,29 @@ The set of activities that the object performs defines the object’s behavior.
 All the members of a class can be accessed through the object. 
 To access the class members, we need to use the dot (.) operator. 
 The dot operator links the name of an object with the name of a member of a class.
+
+**types of classes
+
+Abstract Class
+Concrete class
+Sealed Class
+Partial Class
+Static Class
+
+
+**construtors
+-A class is a collection of members like fields, methods, constructors, etc. 
+-Inside a class one of the most important members present is called Constructor.
+-It is a special method present inside a class responsible for initializing the variables of that class.
+-The constructor method does not return any value. 
+-That means it is a non-value returning method. Generally, methods are of two types i.e. value returning and non-value returning and constructors are purely non-value returning. 
+-That is, they never return any value.
+-The compiler defined this constructor for us. And we call this an Implicit Constructor. 
+ And if we defined the same thing, then it is called an explicit constructor.
+ 
+ -Implicitly Defined Constructors are parameter less and these constructors are also known as Default Constructors.
+ 
+-The constructor’s name should be the same as the class name.
+-It should not contain a return type even void also.
+-As part of the constructor body return statement with a value is not allowed.
+- it is not allowed to define a method with the same class name in C#. It will give you a compile-time error.
