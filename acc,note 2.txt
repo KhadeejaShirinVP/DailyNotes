@@ -1,0 +1,31 @@
+**Object-Oriented Programming 
+
+-its commonly known as OOPs is a technique, not a technology
+- its a methodology
+-this deals with the internal design of the software, not the external design.
+-OOP is faster and easier to execute
+-OOP provides a clear structure for the programs
+-OOP helps to keep the C# code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug
+-OOP makes it possible to create full reusable applications with less code and shorter development time
+
+ **//Classes and Objects
+ -class is a template for objects, and an object is an instance of a class.
+ -When the individual objects are created, they inherit all the variables and methods from the class.
+ -class, and objects addresses the reusability functionality
+ -class is a definition and objects are instances.
+ 
+ **Class:
+A class is simply a user-defined data type that represents both state and behavior. 
+The state represents the properties and behavior is the action that objects can perform. 
+In other words, we can say that a class is the blueprint/plan/template that describes the details of an object. 
+A class is a blueprint from which the individual objects are created. 
+In C#, a Class is composed of three things i.e. a name, attributes, and operations.
+
+**Objects:
+It is an instance of a class. 
+A class is brought live by creating objects. 
+An object can be considered as a thing that can perform activities. 
+The set of activities that the object performs defines the object’s behavior. 
+All the members of a class can be accessed through the object. 
+To access the class members, we need to use the dot (.) operator. 
+The dot operator links the name of an object with the name of a member of a class.
