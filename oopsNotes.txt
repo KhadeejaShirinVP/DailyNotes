@@ -1,0 +1,238 @@
+**Abstraction in Object-oriented Programming
+Abstraction is a process of identifying essential entities (classes) and 
+their characteristics (class members) and leaving irrelevant information from the business requirement to prepare a higher-level application design.
+
+** the process of identifying entities and characteristics which can be classes and their members from the business requirement is called "Abstraction".
+**abstraction is a way of thinking, 
+**whereas encapsulation is a technique to implement abstraction.
+
+
+
+
+*Encapsulation
+-Encapsulation is a technique to implement abstraction in code. 
+-Create classes and their members with appropriate access modifiers to show or hide details and complexity.
+-Encapsulation hides the data and implementation details show only the required members within a class, thus hiding complexity from other code. 
+-No other code needs to know about implementation detail and also can’t modify the code of the class’s data and methods.
+-Interfaces and abstract classes can also be used for encapsulation.
+
+**Advantages of Encapsulation:
+
+
+-Hides data and complexities.
+-Restrict unauthorized access of data by allowing authorization before data access.
+-Allow validation before setting data.
+-Only the author of the class needs to understand the implementation, not others.
+-Makes applications easy to maintain.
+
+
+
+
+
+
+**Inheritance 
+-Inheritance is a mechanism of reusing the functionalities of one class into another related class.
+-This way we don't need to create the same properties in all classes and avoid the violation of the DRY (Do not Repeat Yourself) principle.
+-Inheritance can only be used with related classes where they should have some common behaviors and perfectly substitutable
+-In C#, use the : symbol to inherit a class from another class.
+
+example:-
+class Person       //Parent class
+{
+    public string FirstName;   // data fiields
+    public string LastName;
+
+    public string GetFullName(){        //method 
+        return FirstName + " " + LastName;
+    }
+}
+
+class Employee : Person     // child or derived class
+{
+    public int EmployeeId { get; set; }
+    public string CompanyName { get; set; }
+    
+}
+
+
+**C# does not allow a class to inherit multiple classes. A class can only achieve multiple inheritances through interfaces.
+
+**Role of Access Modifiers in Inheritance**
+-Access modifiers play an important role in inheritance. 
+Access modifiers of each member in the base class impact their accessibility in the derived class.
+1.Public Members
+The public members of the base class are accessible in the derived class and also become part of the derived class object.
+
+2.Private Members
+The private members of the base class cannot be accessed directly from the derived class and cannot be part of the derived class object.
+
+3.Protected Members
+The protected members of the base class can be accessible in the derived class but cannot be a part of the derived class object.
+
+4.Internal Members
+Internal members are accessible in the derived class and are part of the derived class object.
+
+**Constructors in Inheritance**
+
+example:-
+class Person
+{
+    public Person()
+    {
+	    Console.WriteLine("Person Constructor");
+	}
+}
+
+class Employee : Person
+{
+    public Employee()
+    {
+	    Console.WriteLine("Employee Constructor");
+	}   
+}
+
+Employee emp = new Employee();
+
+
+output==Person Constructor
+		Employee Constructor
+		
+**using base Keyword
+example:-
+class Person
+{
+    public Person()
+    {
+	    Console.WriteLine("Person Constructor");
+	}
+
+    public Person(string val)
+    {
+	    Console.WriteLine(val);
+	}
+}
+
+class Employee : Person
+{
+    public Employee() : base("Parameterized constructor of base class")
+    {
+	    Console.WriteLine("Employee Constructor");
+	}   
+}
+
+Employee emp = new Employee();
+
+
+output ==Parameterized constructor of base class
+		 Employee Constructor
+		 
+		 
+
+***Object Initialization
+
+Instance variable				Instance Type						Instance Members of
+
+Base type						Base type								Base type
+Base type						Derived type							Base type
+Derived type					Derived type							Base and derived type
+
+example:-
+class Person
+{
+    public int Id { get; set; }  
+    public string FirstName { get; set; } 
+    public string LastName { get; set; } 
+}
+
+class Employee : Person
+{
+    public string CompanyName { get; set; }
+    public decimal Salary { get; set; }
+}
+
+public class Program
+{
+	public static void Main()
+	{
+        Person per1 = new Person();
+        per1.Id = 1; //valid
+        per1.FirstName = "James"; //valid
+        per1.LastName = "Bond"; //valid
+
+        //per1.CompanyName; // not supported
+        //per1.Salary;  // not supported
+
+        Person per2 = new Employee();
+        per2.Id = 2; //valid
+        per2.FirstName = "Bill"; //valid
+        per2.LastName = "Gates"; //valid
+
+        //per2.CompanyName; // not supported
+        //per2.Salary;  // not supported
+ 
+        Employee emp = new Employee();
+        emp.Id = 1; //valid
+        emp.FirstName = "Steve";//valid
+        emp.LastName = "Jobs";//valid
+        emp.CompanyName = "XYZ"; //valid
+        emp.Salary = 10000; //valid 
+
+        //invalid, can't assign base type to derived type
+        //Employee emp = new Person();
+     }
+}
+
+**Types of Inheritance
+1.Single Inheritance
+In a single inheritance, only one derived class inherits a single base class.
+
+2.Multi-level Inheritance
+In multi-level inheritance, a derived class inherits from a base class and then the same derived class becomes a base class for another derived class. 
+Practically, there are no limits on the level of inheritance, but you should avoid it.
+
+3.Hierarchical Inheritance
+In hierarchical inheritance, multiple derived classes inherit from a single base class.
+
+4.Hybrid Inheritance
+Hybrid inheritance is a combination of multi-level and hierarchical inheritance.
+
+5.Multiple Inheritance
+In multiple inheritance, a class inherits from multiple interfaces. 
+Note that C# does not support deriving multiple base classes. Use interfaces for multiple inheritance.
+
+**Important Points:
+-In C#, three types can participate in inheritance: Class, Struct, and Interface.
+-A class can inherit a single class only. It cannot inherit from multiple classes.
+-A class cannot inherit from a struct.
+-A class can inherit (implement) one or more interfaces.
+-A Struct can inherit from one or more interfaces. However, it cannot inherit from another struct or class.
+-An interface can inherit from one or more interfaces but cannot inherit from a class or a struct.
+-Constructors or destructors cannot be inherited.
+
+
+
+
+**Polymorphism
+use polymorphism if you want to have multiple forms of one or more methods of a class with the same name.
+
+-In C#, polymorphism can be achieved in two ways:
+*Compile-time Polymorphism (Method Overloading)
+*Run-time polymorphism(method of override)
+
+
+**Compile-time Polymorphism (Method Overloading)
+-C# allows us to define more than one method with the same name but with different signatures. 
+This is called method overloading.
+-Method overloading is also known as early binding or static binding because which 
+method to call is decided at compile time, early than the runtime.
+
+**Runtime Polymorphism: Method Overriding
+-also known as inheritance-based polymorphism or method overriding.
+-you can redefine the base class's member in the derived class to provide a different implementation than the base class. 
+-This is called method overriding that also known as runtime polymorphism.
+
+In C#, by default, all the members of a class are sealed and cannot be redefined in the derived class. 
+Use the virtual keyword with a member of the base class to make it overridable, 
+and use the override keyword in the derived class to indicate that this member of the base class is being redefined in the derived class.
+
+example:-
