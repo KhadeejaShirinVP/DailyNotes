@@ -1,0 +1,80 @@
+......*OOP stands for Object-Oriented Programming.
+
+*Procedural programming is about writing procedures or methods that perform operations on the data, 
+ while object-oriented programming is about creating objects that contain both data and methods.
+
+**Object-oriented programming has several advantages over procedural programming:
+-OOP is faster and easier to execute
+-OOP provides a clear structure for the programs
+-OOP helps to keep the C# code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug
+-OOP makes it possible to create full reusable applications with less code and shorter development time
+
+
+.........**Inheritance in C#
+-The process of creating a new class from an existing class such that 
+ the new class acquires all the properties and behaviors of the existing class is called inheritance. 
+-Inheritance is the concept that is used for code reusability and changeability purpose. 
+ Here changeability means overriding the existed functionality or feature of the object or adding more functionality to the object.
+-generally when we start application development, in the initial stages only we plan inheritance and implement it in our project.
+
+
+....What is an Entity?
+ An Entity is something that is associated with a set of attributes. 
+ An Entity can be a living or non-living object. 
+ But anything that is associated with a set of attributes is called Entity.
+ 
+ .....How to Make use of Inheritance in Realtime Application Development?
+Generally, when we develop an application, we will be following a process as follows.
+-Identify the entity associated with the application
+-Identify the attribute that is associated with the application.
+-Now separate the attribute of each entity in a hierarchical order without having any duplicates.
+-Convert those entities into classes.
+
+
+.......**Abstraction
+Basically, Abstraction is a process of hiding the unnecessary things and it provides operation part to end-user. 
+So if we want to understand the abstraction we have to go for a real-life example.
+Suppose that there is a cell phone. 
+Actually, we all don't know how it internally works but we can use it by touching its screen, 
+it means we know only about operational part i.e abstraction.
+
+
+
+......**Encapsulation
+Encapsulation is the process of protecting the information of an object from the end-user. 
+Hide the data for security such as making the variables private, and expose the property to access the private data which would be public.
+
+-*It means if there is abstraction there will be encapsulation, 
+but it is not necessary that if there is encapsulation then there also will be an abstraction.
+
+
+
+
+.........**partial Class
+-a class on multiple files i.e. we can physically split the content of the class into 
+ different files but even physically they are divided but logically it is one single unit only. 
+-A class in which code can be written in two or more files is known as a partial class. To make any class 
+-partial we need to use the keyword partial.
+-split into multiple class files, after compilation, they will be grouped together and will become a single class only.
+
+*There are several situations when splitting a class definition is desirable
+-When working on large projects, splitting a class over separate files allows multiple programmers to work on it simultaneously.
+-When working with automatically generated source code, the code can be added to the class without having to recreate the source file. 
+ Visual Studio uses this approach when creating windows form, Web service wrapper code, and so on.
+ 
+ 
+ 
+ 
+......***IS-A and HAS-A Relationship
+-We can use the design class in two ways. Either we share it with the derived classes or create an object. 
+-If a class is inheriting from some other class, then it is having an ‘IS A’ relationship with that class or 
+-if a class is having an object of some other class, then it is having a ‘HAS A’ relationship with that class.
+
+*All the members are accessible within the class, public and protected members are accessible in the derived classes (IS-A relationship) 
+ and public members are only accessible from non-derived classes (HAS-A relationship).
+*In C#, the IS-A relationship is implemented using Inheritance and the HAS-A relationship is implemented using Composition i.e. declaring a variable. 
+ So, whenever we declare a variable of one class inside another class, 
+ we called it a Composition or you can say HAS-A relationship.
+ 
+ 
+ 
