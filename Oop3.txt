@@ -39,7 +39,16 @@ The memory that it allocates in RAM has three things are as follows:
 then the object is eligible for garbage collection. 
 At some point in time, the garbage collector will de-allocate this object from the heap.
 
+...........Exception Handling in C#
 
+*When we write and execute our code in the .NET framework then there is a possibility of two types of error occurrences.
+-Compilation Errors------The error that occurs in a program at the time of compilation is known as a compilation error (compile-time error). 
+                         These errors occur due to syntactical mistakes in the program.
+                         these errors do not cause any harm to the program execution.						 
+-Runtime Errors----------the errors which are come while running the program are called runtime errors.
+              
+**The compiler will never check the logic, the compiler will only check the syntaxes. 
+  So, the compiler will identify the syntax error, but not the logical error. 
 
  
  
