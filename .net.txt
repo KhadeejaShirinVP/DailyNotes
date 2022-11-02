@@ -1,0 +1,65 @@
+
+****Onion Architecture****
+-introduced by Jeffrey Palermo 
+-To provide a better way to build applications in perspective of better testability, maintainability, and dependability.
+-Onion architecture layers interact to each other by using the Interfaces. 
+-C# programmers are drawn to Onion Architecture due to the dependency flows.
+
+*Principle*
+-Onion Architecture is based on the inversion of control principle. 
+Onion Architecture is comprised of multiple concentric layers interfacing each other towards the core that represents the domain. 
+The architecture does not depend on the data layer as in classic multi-tier architectures, but on the actual domain models.
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+****.NET***
+
+-.NET is a free, cross-platform, open source developer platform for building many different types of applications.
+-With .NET, you can use multiple languages, editors, and libraries to build for web, mobile, desktop, games, IoT, and more.
+
+**Languages
+.NET apps in C#, F#, or Visual Basic.
+-C# 			-simple, modern, object-oriented, and type-safe programming language.
+-F#				-programming language that makes it easy to write succinct, robust, and performant code.
+-Visual Basican -approachable language with a simple syntax for building type-safe, object-oriented apps.
+
+**Cross Platform
+-Whether you're working in C#, F#, or Visual Basic, your code will run natively on any compatible operating system. 
+-You can build many types of apps with .NET. 
+-Some are cross-platform, and some target a specific set of operating systems and devices.
+
+**One consistent API
+-.NET provides a standard set of base class libraries and APIs that are common to all .NET applications.
+-Each app model can also expose additional APIs that are specific to the operating systems it runs on, or the capabilities it provides. 
+-For example, ASP.NET is the cross-platform web framework that provides additional APIs for building web apps that run on Linux or Windows.
+
+**Libraries
+-To extend functionality, Microsoft and others maintain a healthy .NET package ecosystem.
+-NuGet is a package manager built specifically for .NET that contains over 100,000 packages.
+
+**Active community and open-source
+-.NET is open source and under the .NET Foundation. 
+-The .NET Foundation is an independent organization to foster open development and collaboration around the .NET ecosystem.
+
+**Tools
+-The Visual Studio product family provides a great .NET development experience on Windows, Linux, and macOS.
+-The Visual Studio Marketplace has thousands of editor extensions from Microsoft and others.
+-to use a different editor, there are .NET command-line tools and plug-ins for many popular editors.
+
+
+
+
+
+
+
+
