@@ -56,10 +56,45 @@ The architecture does not depend on the data layer as in classic multi-tier arch
 -The Visual Studio Marketplace has thousands of editor extensions from Microsoft and others.
 -to use a different editor, there are .NET command-line tools and plug-ins for many popular editors.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------
 
+DATE: 3-11-2022
 
+***.NET Framework****
+-.Net Framework is a software development platform 
+-Developed by Microsoft for building and running Windows applications.
+-It consist of 
+				-developer tools
+				-programming languages, and 
+				-libraries to build desktop and web applications.
+-It is also used to build websites, web services, and games.
+-first version of the .Net framework---->> .Net framework 1.0 --->>in 2002.
+-current version of .Net Framework--->> 4.7.2.
+-.Net framework can be used to create both form-based and Web-based applications.
+- Web services can also be developed using the .Net framework.
+-It also supports various programming languages such as visual basic and c#.
 
+***.Net Framework Architecture***
+-It is programming model for the .Net platform
+-it provides an execution environment and integration with various programming languages for 
+ simple development and deployment of various Windows and desktop applications.
+-It consists of class libraries and reusable components.
 
+***.NET Components***
 
+*Languages--->>WinForms
+			   ASP.Net
+			   ADO.Net
+
+##WinForms
+- This is used for developing Forms-based applications, which would run on an end user machine. 
+- Notepad is an example of a client-based application.
+
+##ASP.Net
+- This is used for developing web-based applications, which are made to run on any browser such as Internet Explorer, Chrome or Firefox.   
+- 		   
+			   
+*Library--->>Framework class library
+*CLR--->>Common language runtime.
 
 
